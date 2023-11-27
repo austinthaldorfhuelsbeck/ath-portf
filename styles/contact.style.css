@@ -1,0 +1,14 @@
+/* Form */
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+/* Thanks */
+.thanks-header {
+    margin-top: 5rem;
+}
+.thanks-subheader {
+    font-family: monospace;
+    text-align: center;
+    margin: 0 auto 5rem 0;
+}

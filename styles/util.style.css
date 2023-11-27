@@ -1,0 +1,78 @@
+/* Containers */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.content-wrapper {
+    animation: fadeIn 2s;
+    min-width: 40vw;
+    max-width: 100%;
+}
+/* Header */
+.hero {
+    font-size: 300%;
+    font-family: monospace;
+    margin: 0 0 1rem 0;
+}
+.nav-links {
+    margin-top: 1em;
+    font-size: 1em;
+    letter-spacing: 0.04em;
+    font-weight: lighter;
+    text-transform: none;
+    position: relative;
+    text-align: center;
+}
+.nav-link {
+    margin: 0 .7rem;
+}
+/* Content Formatting */
+.top {
+    display: flex;
+    flex-direction: column;
+}
+.middle {
+    margin: 2rem 0;
+    line-height: 170%;
+}
+.bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 0 !important;
+    background: 0 0;
+    border: 1px solid;
+    letter-spacing: .1em;
+    border-radius: .4em;
+}
+/* Footer */
+.social-links {
+    font-size: 150%;
+}
+.social-link {
+    margin: 0 0.5rem;
+}
+/* Animations */
+.anim-typewriter{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto 1rem auto; /* Gives that scrolling effect as the typing happens */
+    /* letter-spacing: .15em; Adjust as needed */
+    animation: 
+        typing 3.5s steps(24, end),
+        blink-caret .75s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+}

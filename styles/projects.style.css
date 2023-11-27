@@ -1,0 +1,30 @@
+/* Containers */
+.projects-content {
+    padding: 4rem 0 0 0;
+}
+.gallery-boxes {
+    margin: 3rem auto 0 auto;
+    display: grid;
+    gap: auto;
+    grid-template-columns: repeat(3, 1fr);
+    --nr-of-columns: 3;
+}
+/* Elements */
+.title {
+    padding-bottom: .3rem;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.img-wrapper {
+    margin-bottom: 2em;
+}
+.button-wrapper {
+    padding: .7em 1.4em;
+    width: 100%;
+}
+.project-img {
+    /* border: solid 1px #808080; */
+    width: 100%;
+    height: calc(44vw / 3);
+    object-fit: cover;
+}

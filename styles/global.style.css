@@ -1,0 +1,90 @@
+/* Definitions */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+/* Elements */
+html {
+    font-size: 16px;
+}
+body {
+    min-height: 100%;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    letter-spacing: normal;
+    text-transform: none;
+    line-height: normal;
+    font-family: Montserrat, sans-serif;
+    position: relative;
+    background-color: #000;
+    color: #ffffffd6;
+    cursor: default;
+}
+header {
+    padding: 3rem 0 0 0;
+}
+footer {
+    width: 90%;
+    min-height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+h1, h2 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    font-size: 200%;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+h3 {
+    margin: .5rem 0;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+ul {
+    padding: 0;
+}
+figure {
+    outline: 0;
+    border: 1px solid;
+    padding: 2vw;
+    margin: 2vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    overflow: hidden;
+    min-width: 23vw;
+    transition: all 0.2s ease-out;
+}
+figure:hover {
+    background-color: #ffffff1b;
+    transform: scale(1.03);
+}
+article {
+    padding-bottom: 2rem;
+}
+section {
+    display: flex;
+    flex-direction: column;
+}
+form {
+    width: 80%;
+    margin: 3rem auto;
+}
+input, textarea, button {
+    border: solid 1px #808080;
+    background: none;
+    margin: .5rem;
+    padding: .5rem;
+    color: #fff;
+}
+button {
+    cursor: pointer;
+}
