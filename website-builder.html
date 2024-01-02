@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- FontAwesome for social buttons -->
+        <script src="https://kit.fontawesome.com/bb1e771a03.js" crossorigin="anonymous"></script>
+        <!-- title -->
+        <title>Austin Thaldorf-Huelsbeck</title>
+        <!-- normalize.css before custom stylesheets -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link href="./styles/global.style.css" rel="stylesheet" type="text/css" />
+        <link href="./styles/util.style.css" rel="stylesheet" type="text/css" />
+        <link href="./styles/projects.style.css" rel="stylesheet" type="text/css" />
+        <link href="./styles/resume.style.css" rel="stylesheet" type="text/css" />
+        <!-- favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+        <!-- fontawesome -->
+        <script src="https://kit.fontawesome.com/bb1e771a03.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="page-container">
+            <!-- Header -->
+            <header>
+                <h1>Austin Thaldorf-Huelsbeck</h1>
+                <section>
+                    <h1 class="hero">Full-Stack Web Developer</h1>
+                </section>
+                <div class="nav-links">
+                    <a class="nav-link" href="/ath-portf/" target="">Projects</a>
+                    <a class="nav-link" href="/ath-portf/resume.html" target="">Resume</a>
+                    <a class="nav-link" href="/ath-portf/contact.html" target="">Contact</a>
+                </div>
+            </header>
+            <!-- Content -->
+            <div class="content-wrapper projects-content">
+                <section>
+                    <h1>Website Builder</h1>
+                    <h3 class="sub-title">A full-stack solution for a customizable personal website and blog.</h3>
+                </section>
+                <section class="tech-container">
+                    <img class="circle-img" src="/img/postgre.png" alt="PostgreSQL" />
+                    <img class="circle-img" src="/img/express.jpg" alt="Express" />
+                    <img class="circle-img" src="/img/react.png" alt="React" />
+                    <img class="circle-img" src="/img/node-js.png" alt="Node" />
+                    <img class="circle-img" src="/img/typescript.png" alt="Node" />
+                </section>
+                <section class="resume-content">
+                    <h3>
+                        <a href="https://website-builder-dashboard.vercel.app/" target="_blank">
+                            Demo Site <i class="fa fa-external-link-alt icon"></i>
+                        </a>
+                    </h3>
+                    <div class="row">
+                        <h3>Repos:</h3>
+                        <h4>
+                            <a href="https://github.com/austinthaldorfhuelsbeck/website-builder-dashboard/" target="_blank">
+                                Dashboard Repo <i class="fa fa-external-link-alt icon"></i>
+                            </a>
+                        </h4>
+                        <h4>
+                            <a href="https://github.com/austinthaldorfhuelsbeck/website-builder-server/" target="_blank">
+                                Server Repo <i class="fa fa-external-link-alt icon"></i>
+                            </a>
+                        </h4>
+                        <h4>
+                            <a href="https://github.com/austinthaldorfhuelsbeck/cathy-loerzel/" target="_blank">
+                                Frontend Repo <i class="fa fa-external-link-alt icon"></i>
+                            </a>
+                        </h4>
+                    </div>
+                </section>
+                <section class="resume-content">
+                    <h2>About the project</h2>
+                    <p>When a colleague reached out about developing her personal website, she needed a finished product quickly in anticipation of her book release. By following self-made deadlines each step of the way, and through working closely with a graphic designer, I was able to deliver a stable deployment on-time.</p>
+                    <p>After the client approved the design for the frontend, I got to work on developing a custom Node.js API. Working with a Postgres database, I was able to keep the data separated from the client, which allowed me to develop a second application to serve as an admin dashboard. From the admin dashboard, the user can manage the content on the site and publish new content.</p>
+                    <img class="details-img content-padding" src="/img/website-builder.png" alt="Website Builder" />
+                </section>
+                <section class="resume-content">
+                    <h2>Project Execution</h2>
+                    <p>Because this application is for a real-world client, the code requires maintenance and refactoring. To help refactor and debug quickly, as well as to help understand and document the code, this project utilizes TypeScript.</p>
+                    <p>Because of the relational database structure, users are able to create and modify custom categories and tags for their content. The Express application handles validation and queries for a wide array of requests with Knex, allowing each frontend application to communicate with the server efficiently to locate the specific data required for each component of the application.</p>
+                    <p>The dashboard is designed with reusable components to allow extension of functionality in the future. React Components are used to handle conditional styling with reusability.</p>
+                    <p>In order to protect the data, access to both the Express application and the dashboard React application are protected with Auth0.</p>
+                </section>
+                <section class="resume-content">
+                    <h2>Project Results</h2>
+                    <p>The website cathyloerzel.com has been live for over two years, and has undergone several revisions to the design and layout. These revisions were accomplished utilizing software development lifecycle principles. Cathy is able to adjust the site’s content when needed.</p>
+                    <p>The dashboard has multiple implementations running with different databases, to protect Cathy’s data while allowing a demo of the application.</p>
+                    <img class="details-img content-padding" src="/img/cathy-2.gif"
+                </section>
+            </div>
+            <!-- Footer -->
+            <footer>
+                <span>© 2024 Austin Thaldorf-Huelsbeck</span>
+                <div class="social-links">
+                    <a class="social-link" href="https://www.linkedin.com/in/austinhuelsbeck" target="_blank">
+                        <i class="fa fa-linkedin-square icon"></i>
+                    </a>
+                    <a class="social-link" href="https://www.github.com/austinthaldorfhuelsbeck" target="_blank">
+                        <i class="fa fa-github icon"></i>
+                    </a>
+                </div>
+            </footer>
+        </body>
+    </div>
+</html>

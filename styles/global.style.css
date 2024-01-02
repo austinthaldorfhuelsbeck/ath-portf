@@ -36,16 +36,23 @@ h1, h2 {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     text-align: center;
-    font-size: 200%;
+    font-size: 175%;
     font-weight: bold;
     margin: 1rem 0;
 }
-h3 {
+h1 {
+    font-size: 225%;
+}
+h3, h4 {
     margin: .5rem 0;
 }
 a {
     color: #fff;
     text-decoration: none;
+}
+p {
+    letter-spacing: .1em;
+    line-height: 150%;
 }
 ul {
     padding: 0;
